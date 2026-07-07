@@ -1,0 +1,35 @@
+{
+  "name": "TeamMember",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "role": {
+      "type": "string"
+    },
+    "photo": {
+      "type": "string"
+    },
+    "bio": {
+      "type": "string"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "skills": {
+      "type": "string"
+    },
+    "experience": {
+      "type": "string"
+    },
+    "displayOrder": {
+      "type": "number",
+      "default": 0
+    }
+  },
+  "required": [
+    "name",
+    "role"
+  ]
+}

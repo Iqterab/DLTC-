@@ -1,0 +1,170 @@
+{
+  "name": "Enrollment",
+  "type": "object",
+  "properties": {
+    "referenceNumber": {
+      "type": "string"
+    },
+    "fullName": {
+      "type": "string"
+    },
+    "fathersName": {
+      "type": "string"
+    },
+    "mothersName": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "nationality": {
+      "type": "string"
+    },
+    "dateOfBirth": {
+      "type": "string",
+      "format": "date"
+    },
+    "nidNumber": {
+      "type": "string"
+    },
+    "birthCertificateNumber": {
+      "type": "string"
+    },
+    "passportNumber": {
+      "type": "string"
+    },
+    "choiceOfCountry": {
+      "type": "string"
+    },
+    "passportPhoto": {
+      "type": "string"
+    },
+    "spouseName": {
+      "type": "string"
+    },
+    "spouseContact": {
+      "type": "string"
+    },
+    "spouseRelationship": {
+      "type": "string"
+    },
+    "spouseNid": {
+      "type": "string"
+    },
+    "presentAddress": {
+      "type": "string"
+    },
+    "permanentAddress": {
+      "type": "string"
+    },
+    "educationQualifications": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "examName": {
+            "type": "string"
+          },
+          "year": {
+            "type": "string"
+          },
+          "grade": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "professionalTraining": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "trainingName": {
+            "type": "string"
+          },
+          "year": {
+            "type": "string"
+          },
+          "duration": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "workExperience": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "country": {
+            "type": "string"
+          },
+          "role": {
+            "type": "string"
+          },
+          "duration": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "technicalTraining": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "trainingName": {
+            "type": "string"
+          },
+          "year": {
+            "type": "string"
+          },
+          "duration": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "preferredCourses": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "otherCourse": {
+      "type": "string"
+    },
+    "preferredStartDate": {
+      "type": "string",
+      "format": "date"
+    },
+    "timeSlot": {
+      "type": "string",
+      "enum": [
+        "Morning",
+        "Afternoon",
+        "Evening"
+      ]
+    },
+    "shortNote": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "Pending",
+        "Approved",
+        "Rejected"
+      ],
+      "default": "Pending"
+    }
+  },
+  "required": [
+    "fullName",
+    "email",
+    "phone"
+  ]
+}

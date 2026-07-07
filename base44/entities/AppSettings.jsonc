@@ -1,0 +1,15 @@
+{
+  "name": "AppSettings",
+  "type": "object",
+  "properties": {
+    "introVideoUrl": {
+      "type": "string"
+    },
+    "heroHeadline": {
+      "type": "string"
+    },
+    "heroSubheadline": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "name": "SisterCompany",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "tagline": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "startYear": {
+      "type": "string"
+    },
+    "displayOrder": {
+      "type": "number",
+      "default": 0
+    }
+  },
+  "required": [
+    "name"
+  ]
+}
